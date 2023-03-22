@@ -1,0 +1,108 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: $white;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    color: $white;
+
+    &.lead {
+        font-size: 24px;
+        line-height: 125%;
+    }
+}
+
+.overline {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 5px;
+}
+
+button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: $white;
+    background: $orange;
+    border-radius: 40px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+        margin-left: 24px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background: $white;
+        color: $orange;
+
+        svg path {
+            fill: $orange;
+        }
+    }
+
+    &:active {
+        transform: translateY(-2px);
+    }
+}
+
+ul li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    padding-left: 40px;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url("/images/check.png") no-repeat;
+    }
+}
