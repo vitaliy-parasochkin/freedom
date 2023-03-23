@@ -33,6 +33,16 @@ header {
     z-index: 3;
 }
 
+.header-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    column-gap: 20px;
+}
+
 .main-section-wrapper {
     background: url("../../docs/assets/images/main_bg.png") no-repeat;
     background-size: cover;
