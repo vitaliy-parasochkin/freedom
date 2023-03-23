@@ -280,6 +280,31 @@ footer {
   text-align: center;
 }
 
+.icon-change-theme {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  cursor: pointer;
+}
+.icon-change-theme svg path {
+  fill: #ffffff;
+}
+
+html.light {
+  transition: all 0.3s ease-in-out;
+}
+html.light .main-section-wrapper:after {
+  background: radial-gradient(837.78% 378.29% at 69.44% -79.86%, rgba(184, 192, 199, 0.9) 0%, #a6b1ba 47.89%, rgba(190, 201, 208, 0.9) 100%);
+}
+html.light .main-info,
+html.light .leader,
+html.light footer {
+  background: #ffffff;
+}
+html.light .facilities {
+  background: #e3e1e1;
+}
+
 h1,
 h2,
 h3,
@@ -290,6 +315,7 @@ h6 {
   line-height: 117%;
   text-transform: uppercase;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
@@ -317,6 +343,7 @@ p {
   font-size: 18px;
   line-height: 139%;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 p.lead {
   font-size: 24px;
@@ -330,6 +357,7 @@ p.lead {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 button {
@@ -367,6 +395,7 @@ ul li {
   color: #ffffff;
   position: relative;
   padding-left: 40px;
+  transition: all 0.3s ease-in-out;
 }
 ul li:not(:last-child) {
   margin-bottom: 15px;
@@ -403,6 +432,23 @@ ul li::after {
 .header-link:hover::after {
   left: 0;
   width: 100%;
+}
+
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+  color: #191c1f;
+}
+html.light p,
+html.light .overline,
+html.light ul li {
+  color: #191c1f;
+}
+html.light svg path {
+  fill: #191c1f;
 }
 
 @media (max-width: 991px) {

@@ -8,6 +8,7 @@ h6 {
     line-height: 117%;
     text-transform: uppercase;
     color: $white;
+    transition: all 0.3s ease-in-out;
 }
 
 h1 {
@@ -35,6 +36,7 @@ p {
     font-size: 18px;
     line-height: 139%;
     color: $white;
+    transition: all 0.3s ease-in-out;
 
     &.lead {
         font-size: 24px;
@@ -49,6 +51,7 @@ p {
     text-transform: uppercase;
     color: $white;
     margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 button {
@@ -90,6 +93,7 @@ ul li {
     color: $white;
     position: relative;
     padding-left: 40px;
+    transition: all 0.3s ease-in-out;
 
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -131,5 +135,26 @@ ul li {
             left: 0;
             width: 100%;
         }
+    }
+}
+
+html.light {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $dark-blue;
+    }
+
+    p,
+    .overline,
+    ul li {
+        color: $dark-blue;
+    }
+
+    svg path {
+        fill: $dark-blue;
     }
 }
